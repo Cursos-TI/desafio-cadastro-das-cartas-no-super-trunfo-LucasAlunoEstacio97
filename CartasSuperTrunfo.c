@@ -9,10 +9,12 @@ int main () {
     scanf(" %c", &estado);
 
     printf("Insira codigo carta\n");
-    scanf(" %s", &codigoCarta);
+    scanf(" %3s", codigoCarta);
+
+    getchar();
 
     printf("Insira nome cidade\n");
-    scanf(" %s", &nomeCidade);
+    fgets(nomeCidade, 26, stdin);
 
     printf("Insira populacao \n");
     scanf("%d", &populacao);
@@ -34,10 +36,12 @@ int main () {
     scanf(" %c", &estado2);
 
     printf("Insira codigo carta 2\n");
-    scanf(" %s", &codigoCarta2);
+    scanf(" %3s", codigoCarta2);
+
+    getchar();
 
     printf("Insira nome cidade 2\n");
-    scanf(" %s", &nomeCidade2);
+    fgets(nomeCidade2, 26, stdin);
 
     printf("Insira populacao 2\n");
     scanf("%d", &populacao2);
@@ -54,21 +58,21 @@ int main () {
     printf(
         "Carta 1:\n"
         "Estado: %c\n"
-        "Codigo: %c\n"
-        "Nome da Cidade: %s\n"
-        "População: %d\n"
+        "Codigo: %s\n"
+        "Nome da Cidade: %s"
+        "Populacao: %d\n"
         "Area: %.2f km2\n"
         "PIB: %.2f bilhoes de reais\n"
         "Numero de Pontos Turisticos: %d\n\n"
         "Carta 2:\n"
         "Estado: %c\n"
-        "Codigo: %c\n"
-        "Nome da Cidade: %s\n"
-        "População: %d\n"
+        "Codigo: %s\n"
+        "Nome da Cidade: %s"
+        "Populacao: %d\n"
         "Area: %.2f km2\n"
         "PIB: %.2f bilhoes de reais\n"
         "Numero de Pontos Turisticos: %d\n",
-        estado, codigoCarta, nomeCidade2, populacao, area, pib, numeroDePontosTuristicos,
+        estado, codigoCarta, nomeCidade, populacao, area, pib, numeroDePontosTuristicos,
         estado2, codigoCarta2, nomeCidade2, populacao2, area2, pib2, numeroDePontosTuristicos2
     );
     
